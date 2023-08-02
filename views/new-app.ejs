@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/new-app.css">
+    <title>Новая заявка</title>
+</head>
+
+<body>
+    <nav>
+        <a href="http://localhost:3000/" class="header">Единая служба</a>
+        <div>
+            <a href="http://localhost:3000/new-app">Оформить заявку</a>
+            <a href="http://localhost:3000/apps">Заявки</a>
+            <a href="">Справочная</a>
+        </div>
+    </nav>
+
+    <main>
+        <h3>Новая заявка</h3>
+        <form action="/" method="post">
+            <div class="container">
+                <div class="column">
+                    <input type="text" name="Surname" placeholder="Фамилия" required>
+                    <input type="text" name="Name" placeholder="Имя" required>
+                    <input type="tel" name="PhoneNumber" placeholder="Номер телефона" required>
+                    <input id="address" type="text" name="Address" placeholder="Адрес" required>
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="Запрашиваемый товар">
+                    <input type="text" placeholder="Запрашиваемая услуга">
+                    <input type="tel" placeholder="Исполнитель запроса" required>
+                    <input id="details" type="text" placeholder="Детали заявки">
+                </div>
+            </div>
+        </form>
+        <button type="submit">
+            <a href="http://localhost:3000/apps">Оформить заявку</a>
+        </button>
+    </main>
+</body>
+
+</html>
