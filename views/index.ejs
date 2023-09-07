@@ -30,14 +30,16 @@
     <div class="number-container">
       <div class="container">
         <div class="container_columns">
-          <div>Şerbet Market</div>
-          <div>Гос. аптека №1</div>
-          <div>Кондиционер, Николай</div>
+           <%NameArray.forEach(function(Name) {%>
+            <div><%=Name%></div>
+         <%});%>
+          
+         
         </div>
         <div class="container_columns">
-          <div>+993 12 34 56 78</div>
-          <div>+993 12 34 56 78</div>
-          <div>+993 12 34 56 78</div>
+          <%NumberArray.forEach(function(Number) {%>
+            <div><%=Number%></div>
+         <%});%>
         </div>
       </div>
     </div>

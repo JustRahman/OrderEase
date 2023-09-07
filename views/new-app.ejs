@@ -21,7 +21,7 @@
 
     <main>
         <h3>Новая заявка</h3>
-        <form action="/" method="post">
+        <form method="POST" action="/new-app/submit">
             <div class="container">
                 <div class="column">
                     <input type="text" name="Surname" placeholder="Фамилия" required>
@@ -30,16 +30,15 @@
                     <input id="address" type="text" name="Address" placeholder="Адрес" required>
                 </div>
                 <div class="column">
-                    <input type="text" placeholder="Запрашиваемый товар">
-                    <input type="text" placeholder="Запрашиваемая услуга">
-                    <input type="tel" placeholder="Исполнитель запроса" required>
-                    <input id="details" type="text" placeholder="Детали заявки">
+                    <input type="text" name="Product" placeholder="Запрашиваемый товар">
+                    <input type="text"  name="Service" placeholder="Запрашиваемая услуга">
+                    <input type="tel"  name="Executor" placeholder="Исполнитель запроса" required>
+                    <input id="details" type="text" name="Details" placeholder="Детали заявки">
                 </div>
             </div>
+            <button type="submit">Оформить заявку</button>
         </form>
-        <button type="submit">
-            <a href="http://localhost:3000/apps">Оформить заявку</a>
-        </button>
+        
     </main>
 </body>
 
